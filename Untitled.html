@@ -1,0 +1,149 @@
+<html>
+<head>
+  <style>
+    /* Styling the chat container */
+    .chat-container {
+      width: 80%;
+      height: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Styling the header section */
+    .header {
+      height: 10%;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Styling the header text */
+    .header-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Styling the header icon */
+    .header-icon {
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* Styling the message section */
+    .messages {
+      height: 80%;
+      overflow-y: scroll;
+      padding: 10px;
+    }
+
+    /* Styling the message box */
+    .message-box {
+      max-width: 60%;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    /* Styling the message avatar */
+    .message-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Styling the message bubble */
+    .message-bubble {
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    /* Styling the message bubble for sender */
+    .message-bubble.sender {
+      background-color: #0084ff;
+      align-self: flex-end;
+    }
+
+    /* Styling the message bubble for receiver */
+    .message-bubble.receiver {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    /* Styling the input section */
+    .input {
+      height: 10%;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      border-top: 1px solid #ccc;
+    }
+
+    /* Styling the input field */
+    .input-field {
+      width: 80%;
+      height: 80%;
+      border: none;
+      border-radius: 20px;
+      padding: 0 10px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    /* Styling the input button */
+    .input-button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background-color: #0084ff;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="header">
+      <span class="header-text">LALISA</span>
+      <span class="header-icon">×</span>
+    </div>
+    <div class="messages">
+      <div class="message-box">
+        <img src="user.png" class="message-avatar">
+        <div class="message-bubble receiver">
+          Hi, this is a chatbot.
+        </div>
+      </div>
+      <div class="message-box">
+        <div class="message-bubble sender">
+          Hello, nice to meet you.
+        </div>
+      </div>
+      <div class="message-box">
+        <img src="user.png" class="message-avatar">
+        <div class="message-bubble receiver">
+          How can I help you?
+        </div>
+      </div>
+    </div>
+    <div class="input">
+      <input type="text" class="input-field" placeholder="Type a message...">
+      <button class="input-button">→</button>
+    </div>
+  </div>
+</body>
+</html>
